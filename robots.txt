@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /photos
+Allow: /
+
+Sitemap: https://kimphotostory.com/sitemap.xml

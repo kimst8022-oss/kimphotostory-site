@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>예약하기 | 의령 사진관 김작가 사진이야기</title>
+<meta name="description" content="가족사진·리마인드웨딩·우정사진·프로필·증명사진 예약. 이름과 연락처만 적어 주세요.">
+<link rel="canonical" href="https://kimphotostory.com/reserve.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="의령 사진관 김작가 사진이야기">
+<meta property="og:title" content="예약하기">
+<meta property="og:description" content="가족사진·리마인드웨딩·우정사진·프로필·증명사진 예약. 이름과 연락처만 적어 주세요.">
+<meta property="og:image" content="https://kimphotostory.com/images/garden.jpg">
+<meta property="og:url" content="https://kimphotostory.com/reserve.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <button class="share-top" type="button" aria-label="이 페이지 공유하기" title="공유하기">
+      <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12 3v11" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M8.2 6.6 12 2.8l3.8 3.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 12.5v7.2h13v-7.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="brand" href="index.html"><img class="brand-logo" src="images/logo-kimstudio.png" alt="김작가 사진이야기 로고" width="45" height="40"><span class="brand-text"><span class="brand-copy">김작가 사진이야기</span><span class="brand-sub">kimphotostory.com</span></span></a>
+    <nav class="main-nav">
+      <a href="event.html">이벤트</a>
+      <a href="greeting.html">인사말</a>
+      <a href="services.html">주요업무</a>
+      <a href="gallery.html">갤러리</a>
+      <a href="story.html">스토리</a>
+      <a href="reserve.html" class="active">예약하기</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-head"><div class="wrap">
+  <p class="page-crumb">예약하기</p>
+  <h1>예약하기</h1>
+  <p class="page-lead">아래에서 촬영 종류를 고르고 이름과 연락처만 적어 주세요. 확인 후 전화드립니다.</p>
+</div></section>
+<section class="section"><div class="wrap narrow">
+  <form class="reserve-form" id="reserveForm" novalidate>
+    <fieldset class="rf-block">
+      <legend>촬영 종류 <span>여러 개 골라도 됩니다</span></legend>
+      <div class="rk-grid">
+      <label class="rk-item"><input type="checkbox" name="kind" value="가족사진"><span><strong>가족사진</strong><em>인원수를 함께 적어 주세요</em></span></label>
+      <label class="rk-item"><input type="checkbox" name="kind" value="리마인드웨딩"><span><strong>리마인드웨딩</strong><em>드레스·정장 대여 포함</em></span></label>
+      <label class="rk-item"><input type="checkbox" name="kind" value="우정사진"><span><strong>우정사진</strong><em>친구들과 함께</em></span></label>
+      <label class="rk-item"><input type="checkbox" name="kind" value="프로필사진"><span><strong>프로필사진</strong><em>개인·증명 프로필</em></span></label>
+      <label class="rk-item"><input type="checkbox" name="kind" value="증명·여권사진"><span><strong>증명·여권사진</strong><em>규격 촬영</em></span></label>
+      <label class="rk-item"><input type="checkbox" name="kind" value="기타"><span><strong>기타</strong><em>상담 후 정리</em></span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="rf-block">
+      <legend>기본 정보</legend>
+      <div class="rf-row">
+        <label>이름 <input type="text" name="name" placeholder="홍길동" required maxlength="20"></label>
+        <label>연락처 <input type="tel" name="phone" placeholder="010-0000-0000" required maxlength="20" inputmode="tel"></label>
+      </div>
+      <div class="rf-row">
+        <label>인원수 <input type="number" name="people" min="1" max="30" placeholder="예: 5" inputmode="numeric"></label>
+        <label>희망 날짜 <input type="date" name="date"></label>
+      </div>
+      <div class="rf-wide">
+        <span class="rf-label">희망 지점</span>
+        <div class="rf-radios">
+          <label><input type="radio" name="branch" value="의령점" checked><span>의령점 · 김작가 사진이야기</span></label>
+          <label><input type="radio" name="branch" value="창원점"><span>창원점 · 사랑이야기 스튜디오</span></label>
+        </div>
+      </div>
+      <label class="rf-wide">요청 사항 <textarea name="memo" rows="3" placeholder="예: 부모님 칠순 기념, 한복 희망, 오전 촬영" maxlength="300"></textarea></label>
+    </fieldset>
+
+    <div class="rf-actions">
+      <button type="submit" class="btn-primary">예약 내용 확인하고 보내기</button>
+      <a class="btn-ghost" href="tel:055-574-3706">전화로 예약 (의령점)</a>
+      <a class="btn-ghost" href="https://pf.kakao.com/_Lxmximn" target="_blank" rel="noopener">카카오채널</a>
+    </div>
+    <p class="rf-note">보내기를 누르면 작성하신 내용이 문자로 정리됩니다. 문자 앱에서 전송해 주시면 접수됩니다.</p>
+    <div class="rf-preview" id="rfPreview" hidden></div>
+  </form>
+</div></section></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="foot-brand">의령 사진관 김작가 사진이야기</p>
+    <p>경남 의령군 궁류면 청정로 1188 · 의령점 055-574-3706 · 창원점 055-287-8022</p>
+    <p class="foot-biz">상호 김작가 사진이야기 · 대표 김지호 · 사업자등록번호 324-15-00778 · 통신판매업 제2020-경남의령-0059호</p>
+    <p class="foot-links"><button type="button" class="biz-btn" data-biz-open>사업자 정보 보기</button></p>
+  </div>
+</footer>
+
+<a class="call-fab" href="tel:01095398022" aria-label="전화 상담 010-9539-8022">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6.6 3.5c.6 0 1.2.4 1.4 1l1 2.6c.2.5.1 1.1-.4 1.5l-1.1.9c.9 1.9 2.4 3.4 4.3 4.3l.9-1.1c.4-.5 1-.6 1.5-.4l2.6 1c.6.2 1 .8 1 1.4v2.3c0 .9-.8 1.6-1.7 1.5C9.9 18.1 5.9 14.1 5.1 5.2 5 4.3 5.7 3.5 6.6 3.5z" fill="currentColor"/></svg>
+  <span>전화하기</span>
+</a>
+<script src="site.js" defer></script>
+<div class="biz-modal" id="bizModal" role="dialog" aria-modal="true" aria-labelledby="bizModalTitle" hidden>
+  <div class="biz-modal__backdrop" data-biz-close></div>
+  <div class="biz-modal__box">
+    <h3 id="bizModalTitle">사업자 정보</h3>
+    <dl>
+      <dt>상호</dt><dd>김작가 사진이야기</dd>
+      <dt>대표</dt><dd>김지호</dd>
+      <dt>사업자등록번호</dt><dd>324-15-00778</dd>
+      <dt>통신판매업</dt><dd>제2020-경남의령-0059호 (신고기관: 의령군)</dd>
+      <dt>사업장 주소</dt><dd>경상남도 의령군 궁류면 청정로 1188, 2층</dd>
+      <dt>업태 / 종목</dt><dd>서비스 / 사진촬영·사진액자</dd>
+      <dt>대표전화</dt><dd>055-574-3706</dd>
+      <dt>창원점</dt><dd>경남 창원시 성산구 원이대로 652, 상남동 롯데빌딩 2층 · 055-287-8022</dd>
+    </dl>
+    <p class="biz-modal__note">본 사이트는 김작가 사진이야기가 운영합니다.</p>
+    <button type="button" class="biz-modal__close" data-biz-close>닫기</button>
+  </div>
+</div>
+</body>
+</html>
